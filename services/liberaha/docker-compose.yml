@@ -1,0 +1,10 @@
+version: '2.2'
+
+services:
+  liberaha:
+    build: .
+    ports:
+      - "5001:4120"
+    volumes:
+      - .:/app
+    restart: on-failure

@@ -1,7 +1,7 @@
 version: '2.2'
 
 services:
-  threadach:
+  redacher:
     build: .
     ports:
       - "5000:5000"

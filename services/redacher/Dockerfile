@@ -1,5 +1,7 @@
 FROM python:3.7-alpine
 
+MAINTAINER @kekov
+
 RUN apk add gcc musl-dev
 
 ADD ./requirements.txt /requirements.txt

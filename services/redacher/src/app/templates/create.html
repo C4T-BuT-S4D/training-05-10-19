@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}
+Создать тред
+{% endblock %}
+{% block body %}
+    <div style="padding-left: 10px; margin-top: 20px;">
+        <h3 style="color: white;">Создайте тред</h3>
+        <form method="post" action="">
+            <label style="color: white;">Название:
+                <input type="text" style="width: 30%;" name="name" placeholder="Cat`s lovers">
+            </label>
+            <br>
+            <input class="button success" type="submit" value="Создать">
+        </form>
+    </div>
+{% endblock %}

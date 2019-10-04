@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}
+Регистрация
+{% endblock %}
+{% block body %}
+    <div style="padding-left: 10px; margin-top: 20px;">
+        <h3 style="color: white;">Войти</h3>
+        <p style="color: white;">
+            Регистируйся, username.
+        </p>
+        <form method="post" action="">
+            <label style="color: white;">Логин:
+                <input type="text" style="width: 30%;" name="login" placeholder="login">
+            </label>
+            <label style="color: white;">Пароль:
+                <input type="password" style="width: 30%" name="password" placeholder="password">
+            </label>
+            <br>
+            <input class="button success" type="submit" value="Регистрация">
+        </form>
+    </div>
+{% endblock %}

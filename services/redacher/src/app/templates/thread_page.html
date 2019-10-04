@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}
+Ред-ach-ер.
+{% endblock %}
+{% block body %}
+    <h5 style="text-align: center; color: #f0ffe8">Тред {{ thread.name }}</h5>
+    {% if thread.messages %}
+    {% for mes in thread.messages %}
+        <h4 style="text-align: center; color: white">{{ mes.author.login }} написал {{ mes.text }} </h4>
+    {% endfor %}
+    {% else %}
+        <h5 style="text-align: center; color: white">Сообщения не найдены</h5>
+    {% endif %}
+    <h5 style="text-align: center; color: white">Написать сообщение в тред</h5>
+    <h4 style="text-align: center; color: white"><a href="/find/{{ t_id }}/{{ u_id }}/{{ hash }}">Инвайт-линк</a></h4>
+
+    <form method="post" action="">
+        <label>
+        <textarea name="text" style="width: 35%; margin-left: auto; margin-right: auto; background-color: rgba(255,255,255,0.5);"></textarea>
+        </label>
+        <div style="width: 100%; text-align: center;">
+            <input style="margin-left: auto; margin-right: auto;" type="submit" class="button warning" value="Создать">
+        </div>
+    </form>
+{% endblock %}

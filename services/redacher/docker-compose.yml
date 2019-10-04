@@ -1,0 +1,10 @@
+version: '2.2'
+
+services:
+  threadach:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./src:/app/src
+    restart: on-failure

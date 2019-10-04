@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}
+Ред-ach-ер. Треды
+{% endblock %}
+{% block body %}
+    {% if threads %}
+    <h5 style="text-align: center; color: #f0ffe8">Треды, в которых вы состоите</h5>
+    {% for tr in threads %}
+        <h5 style="text-align: center; color: white"><a href="/threads/{{ tr.id }}">{{ tr.name }}</a></h5>
+    {% endfor %}
+    {% else %}
+    <h5 style="text-align: center; color: #f0ffe8">Вы не состоите ни в одном треде</h5>
+    {% endif %}
+{% endblock %}

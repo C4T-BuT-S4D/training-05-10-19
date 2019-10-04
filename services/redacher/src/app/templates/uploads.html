@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}
+Список файлов
+{% endblock %}
+{% block body %}
+    {% if files %}
+    <h5 style="text-align: center; color: #f0ffe8">Ваши файлы</h5>
+    {% for fl in files %}
+        <h5 style="text-align: center; color: white"><a href="/uploads/{{ fl.filename }}">{{ fl.filename }}</a></h5>
+    {% endfor %}
+    {% else %}
+    <h5 style="text-align: center; color: #f0ffe8">Вы еще ничего не загрузили</h5>
+    {% endif %}
+{% endblock %}

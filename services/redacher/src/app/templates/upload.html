@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}
+Загрузить файл
+{% endblock %}
+{% block body %}
+    <div style="padding-left: 10px; margin-top: 20px;">
+            Загрузить файл
+            <form method="post" enctype="multipart/form-data">
+                <p><input type=file name=file>
+                <input type=submit value=Upload>
+            </form>
+    </div>
+{% endblock %}

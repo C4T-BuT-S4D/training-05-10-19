@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}
+Ред-ach-ер. Главная
+{% endblock %}
+{% block body %}
+    <h2 style="text-align: center; margin-top: 17%; color: white;">Добро пожаловать. <b>Сюда</b></h2>
+    <h5 style="text-align: center; color: white">Сервис для создания приватных тредов</h5>
+    {% if logged_in() %}
+        <h4 style="text-align: center; color: white"><a href="/create">Создать тред</a></h4>
+        <h4 style="text-align: center; color: white"><a href="/list">Мои треды</a></h4>
+        <h5 style="text-align: center; color: white"><a href="/upload">Загрузить файл</a></h5>
+        <h5 style="text-align: center; color: white"><a href="/uploads">Мои файлы</a></h5>
+
+    {% endif %}
+{% endblock %}

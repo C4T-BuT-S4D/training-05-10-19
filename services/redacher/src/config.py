@@ -1,0 +1,5 @@
+SECRET_KEY = 'gk2ptgp9mB'
+SALT = 'SALT'
+PERM_FILE = 'perms.json'
+UPLOAD_FOLDER = 'uploads'
+DB_FILE = 'db.db'

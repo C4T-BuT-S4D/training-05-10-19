@@ -75,6 +75,8 @@ if __name__ == '__main__':
         cquit(Status.ERROR)
     except ConnectionRefusedError:
         cquit(Status.DOWN, 'Connection error')
+    except socket.timeout:
+        cquit(Status.DOWN, 'Connection error')
     except SystemError as e:
         raise
     except Exception as e:

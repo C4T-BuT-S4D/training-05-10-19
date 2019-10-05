@@ -12,7 +12,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 
 ALPH = string.ascii_letters + string.digits
-URL = "http://{}:8000{}"
+URL = "http://{}:5003{}"
 
 
 class Status(enum.Enum):
@@ -48,8 +48,9 @@ def quit(driver, code, *args, **kwargs):
 
 
 def check_page(driver):
-    if driver.title != 'Awesome Blog':
-        quit(driver, Status.DOWN, f"Invalid page {get_path(driver.current_url)}")
+    pass
+    # if driver.title != 'Awesome Blog':
+    #     quit(driver, Status.DOWN, f"Invalid page {get_path(driver.current_url)}")
 
 
 def random_string(length=8, alph=ALPH):

@@ -1,0 +1,10 @@
+version: '2.2'
+
+services:
+  bot5words:
+    build: .
+    ports:
+      - "5002:5005"
+    volumes:
+      - ./src:/app/src
+    restart: on-failure

@@ -1,0 +1,4 @@
+bottle
+bottle-sqlite
+jinja2
+gevent

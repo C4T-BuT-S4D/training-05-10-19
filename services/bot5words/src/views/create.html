@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block title %}
+Добавить текст
+{% endblock %}
+{% block body %}
+    <div style="padding-left: 10px; margin-top: 20px;">
+    <form method="post" action="">
+    <label style="color: white;">Название текста
+        <input type="text" style="width: 30%" name="name" placeholder="3 раунд Ларина">
+    </label>
+    <label>
+        <textarea style="width: 30%;" name="text" placeholder="В тебе грайма нет, бро ..."></textarea>
+    </label>
+    <input type="submit" class="button warning" value="Создать">
+    </form>
+
+    <h5>Создать используя ссылку</h5>
+    <form method="post" action="create_url">
+    <label style="color: white;">Название текста
+        <input type="text" style="width: 30%" name="name" placeholder="Rap god">
+    </label>
+    <label>
+        <input type="url" style="width: 30%;" name="url" placeholder="https://www.azlyrics.com/lyrics/eminem/rapgod.html"/>
+    </label>
+    <input type="submit" class="button warning" value="Создать">
+    </form>
+
+    </div>
+{% endblock %}

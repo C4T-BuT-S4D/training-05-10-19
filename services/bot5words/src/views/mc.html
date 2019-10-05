@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %}
+Страница банхаммера
+{% endblock %}
+{% block body %}
+    <div style="padding-left: 10px; margin-top: 20px;">
+        <h2 style="color: white;">Привет, человек из чс <b>{{ user }}</b></h2>
+
+            <form method="get" action="/find">
+            <label style="color: white;">Ссылка на текст:
+                <input type="text" style="width: 30%;" name="item" placeholder="xyx">
+            </label>
+            <br>
+            <input class="button success" type="submit" value="Найти">
+        </form>
+    </div>
+    <!--<h3 style="text-align: center; margin-top: 17%; color: white;"><a href="/print">Распечатать данные для продюссера</a></h3>-->
+    <h4 style="text-align: center; color: white;">Через некоторое время здесь будет гораздо больший функционал</h4>
+
+{% endblock %}

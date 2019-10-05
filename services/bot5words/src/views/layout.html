@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation.min.css" crossorigin="anonymous" />
+
+  </head>
+  <style>
+      body {
+          background-image: url(https://www.milkom-komos.ru/upload/resize_cache/iblock/d05/745_300_1/d056889be2447e89d9cdc9165b4a44df.jpg);
+          background-repeat: round;
+          background-size: auto;
+      }
+
+      #wrapper {
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+
+          background-color: rgba(255, 33, 218, 0.7);
+          width: 100%;
+          height: 100%;
+      }
+  </style>
+  <body>
+    <div id="wrapper">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">5 СлОВ для ботА</li>
+          <li><a href="/register">Регистрация</a></li>
+          <li><a href="/login">Вход</a></li>
+        </ul>
+      </div>
+     <div class="top-bar-right">
+       <ul class="menu">
+          <li><a href="/logout">Выйти</a></li>
+           <li><a href="/">Домашняя страница</a></li>
+       </ul>
+     </div>
+    </div>
+
+    {% block body %}{% endblock %}
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js" crossorigin="anonymous"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    </div>
+  </body>
+</html>

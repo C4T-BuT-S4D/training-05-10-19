@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}
+5 СлОВ для ботА. Главная
+{% endblock %}
+{% block body %}
+    <div style="padding-left: 10px; margin-top: 20px;">
+
+        <h2 style="text-align: center; margin-top: 17%; color: white;">{{ text_name }} от <b>{{ author }}</b></h2>
+        <label>
+        <textarea style="width: 35%; height: 60%; margin-left: auto; margin-right: auto; background-color: rgba(255,255,255,0.5);" rows="10" readonly="readonly">{{ text }}</textarea>
+        </label>
+        <h5 style="text-align: center; color: white;">Ключ -- <a href="/find?item={{ key }}"> {{ key }}</a></h5>
+
+        <h4 style="text-align: center; color: white;">Вы можете поделиться ссылкой на этот текст с изолированным или передать ему ключ. Это абсолютно безопасно</h4>
+    </div>
+{% endblock %}

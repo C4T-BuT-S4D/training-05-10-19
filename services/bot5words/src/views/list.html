@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}
+Текста
+{% endblock %}
+{% block body %}
+    {% if texts %}
+    <h2 style="text-align: center; margin-top: 17%; color: white;">Список ваших текстов</h2>
+    {% for text in texts %}
+    <h2 style="text-align: center;"><a style="color:pink;" href="/text/{{ text[0] }}">{{ text[2] }}</a></h2>
+    {% endfor %}
+    {% else %}
+    <h2 style="text-align: center; margin-top: 17%; color: white;">Вы еще не написали ни одного текста</h2>
+    {% endif %}
+{% endblock %}

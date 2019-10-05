@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}Регистрация{% endblock %}
+{% block body %}
+    <div style="padding-left: 10px; margin-top: 20px;">
+        <h3 style="color: white;">Регистрация</h3>
+        <p style="color: white;">
+            Регистрируясь, вы становитесь комментатором или улетаете в бан.<br />
+            Не ждите знака свыше, зарегистрируйтесь прямо сейчас и договаривайтесь!
+        </p>
+        <form method="post" action="">
+            <label style="color: white">Логин:
+                <input type="text" style="width: 30%;" name="login" placeholder="login">
+            </label>
+            <label style="color: whitesmoke">Тип пользователя:
+            <br>
+                <select name="type" style="width:30%;">
+                    <option value="1">Комментатор</option>
+                    <option value="2">***</option>
+                </select>
+            </label>
+            <label style="color: white">Пароль:
+                <input type="password" style="width: 30%;" name="password" placeholder="password">
+            </label>
+            <br />
+            <input class="button success" type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+{% endblock %}

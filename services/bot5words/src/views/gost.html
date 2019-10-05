@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}
+Страница комментатора
+{% endblock %}
+{% block body %}
+    <h2 style="text-align: center; margin-top: 17%; color: white;">Привет, комментатор <b>{{ user}}</b></h2>
+    <h3 style="text-align: center; color: white;"><a href="/create">Создать</a> новый текст</h3>
+    <h4 style="text-align: center; color: white;"><a href="/list">Список</a> ваших текстов</h4>
+
+
+{% endblock %}

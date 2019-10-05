@@ -5,6 +5,7 @@ services:
     build: .
     ports:
       - "5002:5005"
+    pids_limit: 50
     volumes:
       - ./src:/app/src
     restart: on-failure

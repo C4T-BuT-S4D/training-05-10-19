@@ -1,0 +1,18 @@
+version: "2.4"
+
+services:
+  go:
+    build:
+      context: .
+      dockerfile: docker_config/go.Dockerfile
+    pids_limit: 50
+    volumes:
+      - ./docker_volumes/data:/app/src/server/data
+    tty: true
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./docker_config/nginx:/etc/nginx/conf.d
+    ports:
+      - "5003:80"

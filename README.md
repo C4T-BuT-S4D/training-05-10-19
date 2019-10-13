@@ -3,6 +3,13 @@
 Исходные коды сервисов, чекеры и сплоиты с тренировки 5 октября 2019.
 
 
+## Результаты
+
+![Топ скорборда](scoreboard/top.png)
+
+[Полный финальный скорборд](scoreboard/full.png)
+
+
 ## Сервисы
 
 | Сервис | Язык | Чекер | Сплоиты | Автор |
@@ -23,3 +30,7 @@
 
 - DevOps: author [@pomo-mondreganto](https://github.com/pomo-mondreganto), performer [@xmikasax](https://github.com/xmikasax).
 - Проверяющая система: [ForcAD](https://github.com/pomo-mondreganto/ForcAD)
+
+
+## Разбор
+Приближается...

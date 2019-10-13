@@ -3,6 +3,7 @@ version: '2.2'
 services:
   liberaha:
     build: .
+    tty: true
     ports:
       - "5001:4120"
     volumes:

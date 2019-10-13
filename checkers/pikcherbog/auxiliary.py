@@ -43,6 +43,8 @@ def quit(driver, code, *args, **kwargs):
     quit_driver(driver)
     kwargs['file'] = sys.stderr
     print(*args, **kwargs)
+    kwargs['file'] = sys.stdout
+    print(*args, **kwargs)
     assert(type(code) == Status)
     sys.exit(code.value)
 
